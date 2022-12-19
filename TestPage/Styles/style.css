@@ -15,7 +15,7 @@ body {
     justify-content: center;
     padding: 1em;
     box-sizing: border-box;
-    background-image: url('./Sprinkle.svg');
+    background-image: url('../Images/Sprinkle.svg');
     background-attachment: fixed;
     background-position: center;
 }
@@ -46,6 +46,7 @@ body {
 }
 
 .top-bar {
+    display: flex;
     background-color: rgb(33, 75, 77);
     width: 98%;
     margin: .25em;
@@ -54,7 +55,19 @@ body {
     box-shadow: 0px 0px 5px 0px rgb(12, 40, 41);
 }
 
+.user-img {
+    display: flex;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+/* .top-bar img {
+    width: 25;
+} */
+
 .lower-bar {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(33, 75, 77);
     width: 98%;
     margin: .25em;
@@ -62,6 +75,13 @@ body {
     height: 500px;
     flex-grow: 2;
     box-shadow: 0px 0px 5px 0px rgb(12, 40, 41);
+}
+
+.chat-items {
+    height: 10%;
+    background-color: rgba(65, 88, 90, .6);
+    border-radius: 5px;
+    margin: .5em;
 }
 
 .message-box {
@@ -75,3 +95,4 @@ body {
     flex-grow: 2;
     box-shadow: 0px 0px 4px 0px rgb(12, 40, 41);
 }
+
