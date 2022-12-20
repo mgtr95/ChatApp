@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #5e9ea1;
@@ -127,7 +131,5 @@ body {
     overflow-y: auto;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
+
 
