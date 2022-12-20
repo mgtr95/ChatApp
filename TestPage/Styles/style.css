@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #5e9ea1;
+    border-radius: 5px;
+    border: 2px solid #006267;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #004d51;
+    border-radius: 5px;
+    border: 2px solid #006267;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00777d;
+    border-radius: 5px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -35,12 +55,12 @@ body {
 
 .side-bar {
     margin: .5em;
-    box-sizing:border-box;
+    box-sizing: border-box;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-content: center;
     width: 400px;
-    background: rgb(46, 94, 96) ;
+    background: rgb(46, 94, 96);
     border-radius: .75rem;
     border: 3px solid rgb(46, 94, 96);
 }
@@ -66,6 +86,8 @@ body {
 } */
 
 .lower-bar {
+    position: relative;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     background-color: rgb(33, 75, 77);
@@ -78,7 +100,7 @@ body {
 }
 
 .chat-items {
-    height: 10%;
+    height: 4em;
     background-color: rgba(65, 88, 90, .6);
     border-radius: 5px;
     margin: .5em;
@@ -86,13 +108,26 @@ body {
 
 .message-box {
     margin: .5em;
-    box-sizing:border-box;
+    box-sizing: border-box;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-content: center;
     background-color: rgb(33, 75, 77);
     border-radius: .75rem;
     flex-grow: 2;
     box-shadow: 0px 0px 4px 0px rgb(12, 40, 41);
+}
+
+.chat-div {
+    margin: 5px 0;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
 }
 
